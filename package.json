@@ -1,0 +1,40 @@
+{
+  "name": "@nzws/what-is-nft",
+  "version": "1.0.0",
+  "repository": "https://github.com/nzws/what-is-nft",
+  "author": "nzws <dev@nzws.me>",
+  "private": true,
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "lint:prettier": "prettier --ignore-path .gitignore --check .",
+    "lint:tsc": "tsc",
+    "lint:eslint": "eslint --cache --ignore-path .gitignore \"**/*.{ts,tsx}\"",
+    "lint": "npm-run-all -p lint:*",
+    "format": "prettier --ignore-path .gitignore --write ."
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.41",
+    "@types/react-dom": "^17.0.14",
+    "@types/styled-components": "^5.1.24",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.3.2",
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "konva": "^8.3.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-konva": "^17.0.2-5",
+    "styled-components": "^5.3.3",
+    "use-image": "^1.0.10"
+  }
+}
